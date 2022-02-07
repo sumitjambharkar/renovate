@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+import "./App.css";
+import Services from "./componets/Services";
+import React from "react";
+import {Switch, Route} from "react-router-dom";
+import About from './componets/About';
+import Contact from './componets/Contact';
+import Pages from './componets/Pages';
+import Gallery from './componets/Gallery';
+import Home from "./componets/Home";
+import Form from './componets/Form';
+import ViewMenu from "./componets/ViewMenu";
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/about" component={About} exact />
+          <Route path="/contact" component={Contact} exact />
+          <Route path="/service" component={Services} exact />
+          <Route path="/gallery" component={Gallery} exact />
+          <Route path="/pages" component={Pages} exact /> 
+          <Route path="/form" component={Form} exact /> 
+          <Route path="/viewmenu/:id" component={ViewMenu} exact /> 
+        </Switch>
+    </>
   );
 }
 

@@ -1,0 +1,43 @@
+.p_tag{
+    color: #24c8a6;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width:20rem;
+    border-radius: 50%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.box{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 95%;
+    height:120px;
+    border: 2px solid;
+    margin-top: 40px;
+    margin-left: 2%;
+    background-color: red;
+    border-radius: 3pc;
+}
+
+.bookn{
+    padding: 3px;
+    background-color: white;
+    width:110px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.bookn:hover{
+    background-color: blue;
+    color: white;
+    border: 1 px solid white;
+    
+}
